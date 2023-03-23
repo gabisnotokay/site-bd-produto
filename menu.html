@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <meta charset = "utf-8">
+
+            <title>Manutenção Produtos</title>
+            
+            <link rel="stylesheet" href="./_css/style.css"> 
+        </head> 
+
+    <!-- Começo do Menu -->
+
+        <body>
+            <header>
+                <nav>
+                    <a class = "logo" href="menu.html">TABELA PRODUTOS</a>  
+
+                    <div class = "linha">
+                        <img src="_img/linha.png" alt="">
+                    </div>
+
+                    <ul class="nav-list">
+                        <li><a href="#">Principal</a></li>
+                        <li><a href="cadastrar.php">Cadrastar</a></li>
+                        <li><a href="exclusao.php">Excluir</a></li>
+                        <li><a href="pesquisar.php">Pesquisar</a></li>
+                        <li><a href="listar.php">Listar</a></li>
+                        <li><a href="alterar1.php">Alterar</a></li>
+                    </ul>
+                </nav>
+        </header>
+
+    <!-- Fim do Menu -->
+
+    <!-- Começo Carrossel -->
+
+        <div class = "carrossel">
+            <div class = "slides">
+                <input type="radio" name="radio-bnt" id="radio1">
+                <input type="radio" name="radio-bnt" id="radio2">
+                <input type="radio" name="radio-bnt" id="radio3">
+                <input type="radio" name="radio-bnt" id="radio4">
+            
+            <div class="slide first">
+                <img src="_img/slider1.jpg" alt="">
+            </div>
+
+            <div class = "slide">
+                <img src="_img/slider2.jpg" alt="">
+            </div>
+
+            <div class = "slide">
+                <img src="_img/slider3.jpg" alt="">
+            </div>
+
+            <div class = "slide">
+                <img src="_img/slider4.jpg" alt="">
+            </div>
+
+        <div class = "nav-automatic">
+            <div class = "auto-bnt1"></div>
+            <div class = "auto-bnt2"></div>
+            <div class = "auto-bnt3"></div>
+            <div class = "auto-bnt4"></div>
+        </div>
+    </div>
+
+    <div class = "nav-manual">
+        <label for = "radio1" class = "manual-bnt"></label>
+        <label for = "radio2" class = "manual-bnt"></label>
+        <label for = "radio3" class = "manual-bnt"></label>
+        <label for = "radio4" class = "manual-bnt"></label>
+    </div>
+        </div>
+
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+
+            if(counter > 4){
+                counter = 1;
+            }
+        }, 5000);
+    </script>
+        </body>

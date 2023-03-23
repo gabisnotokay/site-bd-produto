@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    margin-left: 475px;
+    margin-top: 50px;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.linha {
+    margin-top: 35px;
+    margin-left: 275px;
+}
+
+nav{
+    margin-top: 50px;
+    position: center;
+    font-family: Helvetica;
+    background: rgb(255, 255, 255);
+    height: 8vh;
+}
+nav ul{
+    float: center;
+    margin-top: 5px;
+    margin-left: 415px;
+    position: absolute;
+  }
+
+nav ul li{
+    display: inline-block;
+    
+  }
+
+nav ul li a{
+    color: rgb(0, 0, 0);
+    display: block;
+    padding: 0 15px;
+    line-height: 70px;
+    font-size: 15px;
+    font-family:'Calibri';
+    background: white;
+    transition: .5s;
+    position: center;
+  }
+
+nav ul li a:hover,
+nav ul li a.active{
+    color: rgb(0, 0, 0);
+  }
+
+nav ul ul{
+    position: center;
+    top: 85px;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+nav ul li:hover > ul{
+    top: 50px;
+    opacity: 1;
+    visibility: visible;
+    margin-left: 0px;
+  }
+
+nav ul ul li{
+    width: 150px;
+    display: list-item;
+    position: left;
+    border-top: none;
+    
+  }
+
+nav ul ul li a{
+    line-height: 50px;
+  }
+
+nav ul ul ul{
+    border-top: none;
+  }
+
+nav ul ul ul li{
+    position: left;
+    top: -70px;
+    left: 100px;
+  }
+
+nav ul ul li a i{
+    margin-right: 700px;
+  }
+
+b{
+    margin-top: 100px;
+}
+
+
